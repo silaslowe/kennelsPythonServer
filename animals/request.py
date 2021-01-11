@@ -1,7 +1,7 @@
 ANIMALS = [
     {
         "id": 1,
-        "name": "Snickers",
+        "name": "Whiskers",
         "species": "Dog",
         "locationId": 1,
         "customerId": 4

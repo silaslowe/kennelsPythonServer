@@ -32,6 +32,7 @@ class HandleRequests(BaseHTTPRequestHandler):
 
         # Your new console.log() that outputs to the terminal
         print(self.path)
+        print("Test Print")
 
         # It's an if..else statement
         if self.path == "/animals":
