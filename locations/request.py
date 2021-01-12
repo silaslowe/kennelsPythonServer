@@ -6,12 +6,10 @@ LOCATIONS = [
     {
         "id": 2,
         "name": "South",
-        "species": "Dog",
     },
     {
         "id": 3,
         "name": "Central",
-        "species": "Cat",
     }
 ]
 
@@ -26,4 +24,15 @@ def get_single_location(id):
         if location["id"] == id:
             requested_location = location
 
-    return requested_location        
+    return requested_location 
+
+def create_location(location):
+    max_id = LOCATIONS[-1]["id"]
+
+    new_id = max_id + 1
+
+    location["id"] = new_id
+
+    LOCATIONS.append(location)
+
+    return location       
