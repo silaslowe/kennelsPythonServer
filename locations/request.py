@@ -38,7 +38,7 @@ def create_location(location):
     return location
 
 def delete_location(id):
-    animal_index = -1
+    location_index = -1
 
     for index, location in enumerate(LOCATIONS):
         if location["id"] == id:
@@ -46,3 +46,9 @@ def delete_location(id):
 
     if location_index >= 0:
         LOCATIONS.pop(location_index)
+
+def update_location(id, new_location):
+    for index, location in enumerate(LOCATIONS):
+        if location["id"] == id:
+            LOCATIONS[index] = new_location
+            break
