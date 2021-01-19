@@ -88,7 +88,7 @@ def get_single_customer(id):
 
     return json.dumps(customer.__dict__)
 
-def get_customers_by_email():
+def get_customers_by_email(email):
   with sqlite3.connect("./kennel.db") as conn:
     conn.row_factory = sqlite3.Row
     db_cursor = conn.cursor()
